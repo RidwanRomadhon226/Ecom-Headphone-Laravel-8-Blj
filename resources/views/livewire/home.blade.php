@@ -31,11 +31,11 @@
 
     {{-- Pilih Products --}}
 
-    <section class="best-products mt-5 mb-5" >
+    <section class="products mt-5 mb-5" >
       <h3><strong>Pilih Bast Products</strong></h3>
       <div class="row mt-4">
         @foreach ($products as $product)
-        <div class="col">
+        <div class="col-md-3">
           <div class="card">
             <div class="card-body text-center">
               <img class="img-fluid" src=" {{ url('assets/jersey') }}/{{ $product->gambar }} " />
@@ -47,7 +47,7 @@
               </div>
               <div class="row mt-2">
                 <div class="col-md-12">
-                  <a class="btn btn-dark block" href="#">Detail</a>
+                  <a class="btn btn-dark " href="#">Detail</a>
                 </div>
               </div>
             </div>
